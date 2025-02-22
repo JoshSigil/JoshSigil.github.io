@@ -1,0 +1,6 @@
+site_name: Regras da Casa
+theme:
+  name: material
+
+nav:
+  - Início: index.md
