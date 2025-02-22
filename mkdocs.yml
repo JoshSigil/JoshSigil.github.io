@@ -1,6 +1,6 @@
-site_name: Regras da Casa
+site_name: Obituário de Deuses - Regras da Casa
+site_url: https://JoshSigil.github.io/  # 🔥 Adicione esta linha!
 theme:
   name: material
-
 nav:
   - Início: index.md
