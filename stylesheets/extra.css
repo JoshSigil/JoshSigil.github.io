@@ -26,33 +26,42 @@ body, .md-typeset {
 }
 
 /* Configuração para navegação lateral fixa */
-/* Garante que a sidebar seja exibida corretamente */
 .md-sidebar {
-    display: block !important;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 100vh;
+    background-color: #ffffff;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    display: block !important; /* Garante que a sidebar fique visível */
     visibility: visible !important;
     opacity: 1 !important;
-    overflow-y: auto; /* Permite rolagem caso haja muitas seções */
+    overflow-y: auto; /* Permite rolagem caso o menu seja longo */
 }
 
-/* Força a exibição dos itens do menu */
-.md-nav {
-    display: block !important;
+.md-main {
+    margin-left: 270px;
+    background-color: #ffffff;
+    padding: 20px;
+    box-shadow: none;
+    border-radius: 0;
 }
 
+/* Correção para o menu lateral */
 .md-nav__list {
     display: block !important;
 }
 
 .md-nav__item {
-    display: list-item !important; /* 🔥 Garante que os itens apareçam */
     padding: 6px 10px;
 }
 
-/* Corrige o espaçamento da sidebar */
-.md-sidebar__scrollwrap {
-    overflow-y: auto !important;
+/* Ocultar navegação no topo */
+.md-header, .md-tabs {
+    display: none;
 }
-
 
 /* Admonitions com estilo clássico */
 .admonition {
