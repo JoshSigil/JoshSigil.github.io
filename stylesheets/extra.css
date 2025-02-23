@@ -35,6 +35,10 @@ body, .md-typeset {
     background-color: #ffffff;
     padding: 20px;
     box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    display: block !important; /* Garante que a sidebar fique visível */
+    visibility: visible !important;
+    opacity: 1 !important;
+    overflow-y: auto; /* Permite rolagem caso o menu seja longo */
 }
 
 .md-main {
@@ -43,6 +47,15 @@ body, .md-typeset {
     padding: 20px;
     box-shadow: none;
     border-radius: 0;
+}
+
+/* Correção para o menu lateral */
+.md-nav__list {
+    display: block !important;
+}
+
+.md-nav__item {
+    padding: 6px 10px;
 }
 
 /* Ocultar navegação no topo */
