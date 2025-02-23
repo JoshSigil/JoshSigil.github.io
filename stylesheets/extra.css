@@ -26,10 +26,14 @@ body, .md-typeset {
     background-color: var(--md-default-bg-color);
 }
 
-/* Dark Mode ajustado */
+/* Dark Mode personalizado */
 @media (prefers-color-scheme: dark) {
-    body, .md-typeset {
-        background-color: var(--md-dark-bg-color);
-        color: var(--md-default-fg-color);
+    body {
+        background-color: #121212; /* Novo tom de fundo escuro */
+        color: #dcdcdc;
+    }
+    .md-main, .md-sidebar {
+        background-color: #1a1a1a;
+        color: #dcdcdc;
     }
 }
