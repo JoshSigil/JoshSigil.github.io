@@ -3,11 +3,11 @@
 @import url('https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&family=EB+Garamond:wght@400;700&display=swap');
 
 :root {
-    --md-primary-fg-color: #4B0082;  /* Roxo-escuro quase negro */
-    --md-accent-fg-color:  #4B0082;
-    --md-default-fg-color: #4B0082;
+    --md-primary-fg-color: #1d062e;  /* Roxo-escuro quase negro */
+    --md-accent-fg-color:  #1d062e;
+    --md-default-fg-color: #1d062e;
     --md-code-bg-color: #f8f8f8;  /* Fundo claro para blocos de código */
-    --md-category-fg-color: #0047AB; /* Azul Cobalto para categorias principais */
+    --md-category-fg-color: #174f7e; /* Azul Cobalto para categorias principais */
 }
 
 /* Fonte personalizada para títulos */
@@ -39,6 +39,7 @@ body, .md-typeset, .md-content {
 .md-nav__list .md-nav__item .md-nav__list .md-nav__item .md-nav__link {
     font-size: 1.1em !important;
     font-weight: normal !important;
+    font-variant: normal !important; /* Aplica Small Caps */
     color: var(--md-primary-fg-color) !important;
 }
 
