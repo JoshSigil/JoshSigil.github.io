@@ -3,11 +3,11 @@
 @import url('https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&family=EB+Garamond:wght@400;700&display=swap');
 
 :root {
-    --md-primary-fg-color: #1d0031;  /* Roxo-escuro quase negro */
-    --md-accent-fg-color: #1d0031;
-    --md-default-fg-color: #1d0031;
-    --md-default-bg-color: #ffffff;  /* Fundo branco para tema claro */
-    --md-dark-bg-color: #1c1c1c;    /* Fundo cinza escuro para tema escuro */
+    --md-primary-fg-color: #4B0082;  /* Roxo-escuro quase negro */
+    --md-accent-fg-color:  #4B0082;
+    --md-default-fg-color: #4B0082;
+    --md-code-bg-color: #f8f8f8;  /* Fundo claro para blocos de código */
+    --md-category-fg-color: #0047AB; /* Azul Cobalto para categorias principais */
 }
 
 /* Fonte personalizada para títulos */
@@ -18,33 +18,34 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* Fonte para o corpo do texto */
-body, .md-typeset {
+body, .md-typeset, .md-content {
     font-family: 'EB Garamond', serif;
     font-size: 1.2em;
     line-height: 1.8;
     color: var(--md-default-fg-color);
-    background-color: var(--md-default-bg-color);
+    background-color: #ffffff;
+}
+
+/* Estilização das divisões principais (Sistema, Mundo, Bestiário) */
+.md-nav__title {
+    font-size: 1.2em !important; /* Aumenta levemente o tamanho da fonte */
+    font-weight: bold !important;
+    font-variant: small-caps !important; /* Aplica Small Caps */
+    color: var(--md-category-fg-color) !important; /* Azul Cobalto */
+    padding: 8px 0;
 }
 
 /* Dark Mode personalizado */
 @media (prefers-color-scheme: dark) {
-    :root {
-        --md-default-bg-color: #121212 !important; /* Garante que o fundo escuro seja aplicado */
-    }
-
-    body, .md-typeset, .md-content, .md-main {
-        background-color: var(--md-default-bg-color) !important;
+    body, .md-typeset, .md-content {
+        background-color: #121212 !important; /* Novo tom de fundo escuro aplicado corretamente */
         color: #dcdcdc !important;
     }
-
-    .md-sidebar {
+    .md-main, .md-sidebar {
         background-color: #1a1a1a !important;
         color: #dcdcdc !important;
     }
-
-    /* Garante que caixas e blocos de código também tenham o fundo certo */
-    .md-typeset pre, .md-typeset code {
-        background-color: #222 !important;
-        color: #ddd !important;
+    .md-nav__title {
+        color: #4A90E2 !important; /* Azul mais brilhante no modo escuro */
     }
 }
