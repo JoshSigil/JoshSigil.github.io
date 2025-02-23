@@ -6,6 +6,8 @@
     --md-primary-fg-color: #1d0031;  /* Roxo-escuro quase negro */
     --md-accent-fg-color: #1d0031;
     --md-default-fg-color: #1d0031;
+    --md-default-bg-color: #ffffff;  /* Fundo branco para tema claro */
+    --md-dark-bg-color: #1c1c1c;    /* Fundo cinza escuro para tema escuro */
 }
 
 /* Fonte personalizada para títulos */
@@ -21,13 +23,13 @@ body, .md-typeset {
     font-size: 1.2em;
     line-height: 1.8;
     color: var(--md-default-fg-color);
-    background-color: #ffffff;
+    background-color: var(--md-default-bg-color);
 }
 
-/* Dark Mode básico */
+/* Dark Mode ajustado */
 @media (prefers-color-scheme: dark) {
-    body {
-        background-color: #0b010c;
-        color: #4d282849;
+    body, .md-typeset {
+        background-color: var(--md-dark-bg-color);
+        color: var(--md-default-fg-color);
     }
 }
