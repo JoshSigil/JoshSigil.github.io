@@ -10,7 +10,7 @@
     --md-category-fg-color: #174f7e; /* Azul Cobalto para categorias principais */
     --md-light-bg-color: #ffffff; /* Fundo claro para desktop */
     --md-dark-bg-color: #121212; /* Fundo escuro para dark mode */
-    --md-mobile-bg-color: #f5f5f5; /* Fundo mais claro para celular */
+    --md-mobile-bg-color: #e5e7cda6; /* Fundo mais claro para celular */
 }
 
 /* Fonte personalizada para títulos */
@@ -50,11 +50,11 @@ body, .md-typeset, .md-content {
 @media (prefers-color-scheme: dark) {
     body, .md-typeset, .md-content {
         background-color: #121212 !important; /* Novo tom de fundo escuro aplicado corretamente */
-        color: #dcdcdc !important;
+        color: #1c1422 !important;
     }
     .md-main, .md-sidebar {
         background-color: #1a1a1a !important;
-        color: #dcdcdc !important;
+        color: #1c1422 !important;
     }
     .md-sidebar .md-nav__list > .md-nav__item > .md-nav__link {
         color: #4A90E2 !important; /* Azul mais brilhante no modo escuro */
