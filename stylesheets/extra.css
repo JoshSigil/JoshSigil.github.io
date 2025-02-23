@@ -25,37 +25,47 @@ body, .md-typeset {
     background-color: #ffffff;
 }
 
-/* Configuração para navegação lateral fixa */
+/* Sidebar fixa e navegável */
 .md-sidebar {
-    width: 300px !important; /* Aumenta a largura da sidebar */
+    width: 280px !important; /* Ajuste fino da largura da sidebar */
     position: fixed;
     top: 0;
     left: 0;
     height: 100vh;
     background-color: #ffffff;
     overflow-y: auto;
-    z-index: 10; /* Garante que fique acima de outros elementos */
+    z-index: 10;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
 }
 
-/* Ajusta a área principal para não sobrepor a sidebar */
+/* Ajusta o conteúdo principal para não sobrepor a sidebar */
 .md-main {
-    margin-left: 320px !important; /* Ajuste de acordo com a sidebar */
+    margin-left: 300px !important; /* Ajuste fino para o alinhamento correto */
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: none;
+    border-radius: 0;
 }
-/* Correção para o menu lateral */
-.md-nav__list {
+
+/* Correção para exibição de itens do menu lateral */
+.md-nav__list, .md-nav {
     display: block !important;
 }
 
 .md-nav__item {
+    display: list-item !important;
     padding: 6px 10px;
 }
 
 /* Corrige a barra de navegação superior */
 .md-header {
-    position: relative !important; /* Evita sobreposição da sidebar */
+    position: relative !important;
 }
 
-/* Admonitions com estilo clássico */
+/* Estilização das Admonitions */
 .admonition {
     border-left: 4px solid var(--md-primary-fg-color);
     background-color: #f8f8f8;
@@ -69,7 +79,7 @@ body, .md-typeset {
     color: var(--md-primary-fg-color);
 }
 
-/* Dark Mode espelhado sem efeitos */
+/* Dark Mode espelhado sem efeitos visuais exagerados */
 @media (prefers-color-scheme: dark) {
     body {
         background-color: #1a1a1a;
