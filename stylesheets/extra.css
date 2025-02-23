@@ -28,7 +28,7 @@ body, .md-typeset {
 /* Dark Mode básico */
 @media (prefers-color-scheme: dark) {
     body {
-        background-color: #1a1a1a;
+        background-color: #0b010c;
         color: #dcdcdc;
     }
 }
