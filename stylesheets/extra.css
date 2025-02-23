@@ -27,28 +27,20 @@ body, .md-typeset {
 
 /* Configuração para navegação lateral fixa */
 .md-sidebar {
+    width: 300px !important; /* Aumenta a largura da sidebar */
     position: fixed;
     top: 0;
     left: 0;
-    width: 250px;
     height: 100vh;
     background-color: #ffffff;
-    padding: 20px;
-    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
-    display: block !important; /* Garante que a sidebar fique visível */
-    visibility: visible !important;
-    opacity: 1 !important;
-    overflow-y: auto; /* Permite rolagem caso o menu seja longo */
+    overflow-y: auto;
+    z-index: 10; /* Garante que fique acima de outros elementos */
 }
 
+/* Ajusta a área principal para não sobrepor a sidebar */
 .md-main {
-    margin-left: 270px;
-    background-color: #ffffff;
-    padding: 20px;
-    box-shadow: none;
-    border-radius: 0;
+    margin-left: 320px !important; /* Ajuste de acordo com a sidebar */
 }
-
 /* Correção para o menu lateral */
 .md-nav__list {
     display: block !important;
@@ -58,9 +50,9 @@ body, .md-typeset {
     padding: 6px 10px;
 }
 
-/* Ocultar navegação no topo */
-.md-header, .md-tabs {
-    display: none;
+/* Corrige a barra de navegação superior */
+.md-header {
+    position: relative !important; /* Evita sobreposição da sidebar */
 }
 
 /* Admonitions com estilo clássico */
