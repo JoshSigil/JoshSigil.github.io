@@ -27,12 +27,19 @@ body, .md-typeset, .md-content {
 }
 
 /* Estilização das divisões principais (Sistema, Mundo, Bestiário) */
-.md-nav__title, .md-nav__item .md-nav__link[aria-expanded] {
-    font-size: 1.2em !important; /* Aumenta levemente o tamanho da fonte */
+.md-sidebar .md-nav__list > .md-nav__item {
+    font-size: 1.3em !important; /* Aumenta levemente o tamanho da fonte */
     font-weight: bold !important;
     font-variant: small-caps !important; /* Aplica Small Caps */
     color: var(--md-category-fg-color) !important; /* Azul Cobalto */
-    padding: 8px 0;
+    padding: 8px 12px;
+}
+
+/* Ajuste para as seções dentro das categorias */
+.md-nav__list .md-nav__item .md-nav__link {
+    font-size: 1.1em !important;
+    font-weight: normal !important;
+    color: var(--md-primary-fg-color) !important;
 }
 
 /* Dark Mode personalizado */
@@ -45,7 +52,7 @@ body, .md-typeset, .md-content {
         background-color: #1a1a1a !important;
         color: #dcdcdc !important;
     }
-    .md-nav__title, .md-nav__item .md-nav__link[aria-expanded] {
+    .md-sidebar .md-nav__list > .md-nav__item {
         color: #4A90E2 !important; /* Azul mais brilhante no modo escuro */
     }
 }
