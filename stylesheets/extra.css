@@ -29,6 +29,6 @@ body, .md-typeset {
 @media (prefers-color-scheme: dark) {
     body {
         background-color: #0b010c;
-        color: #dcdcdc;
+        color: #4d282849;
     }
 }
