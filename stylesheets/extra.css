@@ -28,12 +28,12 @@ body, .md-typeset {
 
 /* Dark Mode personalizado */
 @media (prefers-color-scheme: dark) {
-    body {
-        background-color: #121212; /* Novo tom de fundo escuro */
-        color: #dcdcdc;
+    body, .md-typeset {
+        background-color: #121212 !important; /* Novo tom de fundo escuro aplicado a todo o corpo do texto */
+        color: #dcdcdc !important;
     }
     .md-main, .md-sidebar {
-        background-color: #1a1a1a;
-        color: #dcdcdc;
+        background-color: #1a1a1a !important;
+        color: #dcdcdc !important;
     }
 }
