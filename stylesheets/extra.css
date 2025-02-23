@@ -3,10 +3,11 @@
 @import url('https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&family=EB+Garamond:wght@400;700&display=swap');
 
 :root {
-    --md-primary-fg-color: #4B0082;  /* Roxo-escuro quase negro */
-    --md-accent-fg-color:  #4B0082;
-    --md-default-fg-color: #4B0082;
-    --md-code-bg-color: #f8f8f8;  /* Fundo claro para blocos de código */
+    --md-primary-fg-color: #1d0031;  /* Roxo-escuro quase negro */
+    --md-accent-fg-color: #1d0031;
+    --md-default-fg-color: #1d0031;
+    --md-default-bg-color: #ffffff;  /* Fundo branco para tema claro */
+    --md-dark-bg-color: #1c1c1c;    /* Fundo cinza escuro para tema escuro */
 }
 
 /* Fonte personalizada para títulos */
@@ -17,22 +18,33 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* Fonte para o corpo do texto */
-body, .md-typeset, .md-content {
+body, .md-typeset {
     font-family: 'EB Garamond', serif;
     font-size: 1.2em;
     line-height: 1.8;
     color: var(--md-default-fg-color);
-    background-color: #ffffff;
+    background-color: var(--md-default-bg-color);
 }
 
 /* Dark Mode personalizado */
 @media (prefers-color-scheme: dark) {
-    body, .md-typeset, .md-content {
-        background-color: #121212 !important; /* Novo tom de fundo escuro aplicado corretamente */
+    :root {
+        --md-default-bg-color: #121212 !important; /* Garante que o fundo escuro seja aplicado */
+    }
+
+    body, .md-typeset, .md-content, .md-main {
+        background-color: var(--md-default-bg-color) !important;
         color: #dcdcdc !important;
     }
-    .md-main, .md-sidebar {
+
+    .md-sidebar {
         background-color: #1a1a1a !important;
         color: #dcdcdc !important;
+    }
+
+    /* Garante que caixas e blocos de código também tenham o fundo certo */
+    .md-typeset pre, .md-typeset code {
+        background-color: #222 !important;
+        color: #ddd !important;
     }
 }
