@@ -1,0 +1,68 @@
+/* docs/stylesheets/extra.css */
+
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&family=EB+Garamond:wght@400;700&display=swap');
+
+:root {
+    --md-primary-fg-color: #1d062e;  /* Roxo-escuro quase negro */
+    --md-accent-fg-color:  #1d062e;
+    --md-default-fg-color: #1d062e;
+    --md-code-bg-color: #f8f8f8;  /* Fundo claro para blocos de código */
+    --md-category-fg-color: #174f7e; /* Azul Cobalto para categorias principais */
+    --md-light-bg-color: #ffffff; /* Fundo claro para desktop */
+    --md-dark-bg-color: #c7c7c7ce; /* Fundo escuro para dark mode */
+    --md-mobile-bg-color: #c9c9c9; /* Fundo mais claro para celular */
+}
+
+/* Fonte personalizada para títulos */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'IM Fell English SC', serif;
+    font-weight: bold;
+    color: var(--md-primary-fg-color);
+}
+
+/* Fonte para o corpo do texto */
+body, .md-typeset, .md-content {
+    font-family: 'EB Garamond', serif;
+    font-size: 1.2em;
+    line-height: 1.8;
+    color: var(--md-default-fg-color);
+    background-color: #ffffff;
+}
+
+/* Estilização das categorias principais (Sistema, Mundo, Bestiário) */
+.md-sidebar .md-nav__list > .md-nav__item > .md-nav__link {
+    font-size: 1.3em !important; /* Aumenta o tamanho da fonte */
+    font-weight: bold !important;
+    font-variant: small-caps !important; /* Aplica Small Caps */
+    color: var(--md-category-fg-color) !important; /* Azul Cobalto */
+    padding: 8px 12px;
+}
+
+/* Ajuste para as subseções dentro das categorias */
+.md-nav__list .md-nav__item .md-nav__list .md-nav__item .md-nav__link {
+    font-size: 1.1em !important;
+    font-weight: normal !important;
+    font-variant: normal !important; /* Aplica Small Caps */
+    color: var(--md-primary-fg-color) !important;
+}
+
+/* Dark Mode personalizado */
+@media (prefers-color-scheme: dark) {
+    body, .md-typeset, .md-content {
+        background-color: #797979 !important; /* Novo tom de fundo escuro aplicado corretamente */
+        color: #1c1422 !important;
+    }
+    .md-main, .md-sidebar {
+        background-color: #797979 !important;
+        color: #1c1422 !important;
+    }
+    .md-sidebar .md-nav__list > .md-nav__item > .md-nav__link {
+        color: #4A90E2 !important; /* Azul mais brilhante no modo escuro */
+    }
+}
+/* Ajuste específico para mobile */
+@media (max-width: 768px) {
+    body, .md-typeset, .md-content {
+        background-color: var(--md-mobile-bg-color) !important; /* Fundo mais claro para celulares */
+    }
+}

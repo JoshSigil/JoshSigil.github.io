@@ -1,0 +1,3 @@
+title: Sistema
+collapse: true  # 🔥 Permite expandir e recolher essa seção
+order: asc  # Ou use "order: manual" e liste os arquivos na ordem desejada
