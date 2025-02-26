@@ -1,7 +1,0 @@
-title: Obituário de Deuses
-collapse: true  # 🔥 Permite expandir e recolher essa seção
-arrange:
-  - index.md
-  - sistema
-  - mundo
-  - bestiario
