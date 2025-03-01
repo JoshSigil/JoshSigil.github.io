@@ -66,3 +66,62 @@ body, .md-typeset, .md-content {
         background-color: var(--md-mobile-bg-color) !important; /* Fundo mais claro para celulares */
     }
 }
+/* Estilização geral da tabela */
+.md-typeset table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 2px solid #865792; /* Borda bege/dourado */
+    font-size: 1.1em;
+}
+
+/* Estiliza o cabeçalho */
+.md-typeset table thead {
+    background-color: #423349; /* Cor bege/dourado */
+    color: #ffffff; /* Texto branco */
+    font-weight: bold;
+    text-align: left;
+}
+
+/* Células da tabela */
+.md-typeset table td, .md-typeset table th {
+    border: 1px solid #7d6280; /* Borda fina */
+    padding: 10px;
+}
+
+/* Alternância de cores nas linhas */
+.md-typeset table tbody tr:nth-child(even) {
+    background-color: #F5F5F5; /* Cinza claro */
+}
+
+.md-typeset table tbody tr:nth-child(odd) {
+    background-color: #EAEAEA; /* Outra variação de cinza claro */
+}
+
+/* Destaca células ao passar o mouse */
+.md-typeset table tr:hover {
+    background-color: #DDD8C4; /* Bege claro */
+}
+
+/* Ajuste para o dark mode */
+@media (prefers-color-scheme: dark) {
+    .md-typeset table {
+        border-color: #A39E93; /* Borda mais escura no dark mode */
+    }
+
+    .md-typeset table thead {
+        background-color: #554E3E; /* Cabeçalho escuro */
+        color: #FFFFFF;
+    }
+
+    .md-typeset table tbody tr:nth-child(even) {
+        background-color: #2D2B26;
+    }
+
+    .md-typeset table tbody tr:nth-child(odd) {
+        background-color: #403D37;
+    }
+
+    .md-typeset table tr:hover {
+        background-color: #5B5549;
+    }
+}
