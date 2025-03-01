@@ -101,7 +101,35 @@ body, .md-typeset, .md-content {
 .md-typeset table tr:hover {
     background-color: #DDD8C4; /* Bege claro */
 }
+/* Aumenta a fonte das tabelas */
+.md-typeset table {
+    font-size: 1.2em; /* Ajuste conforme necessário */
+}
 
+/* Aumenta a fonte do cabeçalho da tabela */
+.md-typeset table thead th {
+    font-size: 1.3em; /* Maior que o texto normal */
+    font-weight: bold;
+}
+
+/* Aumenta a fonte das células */
+.md-typeset table td {
+    font-size: 1.15em;
+}
+@media (prefers-color-scheme: dark) {
+    .md-typeset table {
+        font-size: 1.2em;
+    }
+
+    .md-typeset table thead th {
+        font-size: 1.3em;
+        font-weight: bold;
+    }
+
+    .md-typeset table td {
+        font-size: 1.15em;
+    }
+}
 /* Ajuste para o dark mode */
 @media (prefers-color-scheme: dark) {
     .md-typeset table {
