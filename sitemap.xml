@@ -13,7 +13,11 @@
          <lastmod>2025-03-06</lastmod>
     </url>
     <url>
-         <loc>https://JoshSigil.github.io/mundo/Fac%C3%A7%C3%B5es%20de%20Drakkenheim/</loc>
+         <loc>https://JoshSigil.github.io/mundo/Fac%C3%A7%C3%B5es/Fac%C3%A7%C3%B5es%20de%20Drakkenheim/</loc>
+         <lastmod>2025-03-06</lastmod>
+    </url>
+    <url>
+         <loc>https://JoshSigil.github.io/mundo/Fac%C3%A7%C3%B5es/faccoes_drakkenheim/</loc>
          <lastmod>2025-03-06</lastmod>
     </url>
     <url>
@@ -26,26 +30,6 @@
     </url>
     <url>
          <loc>https://JoshSigil.github.io/mundo/Locais%20de%20Interesse/Hibergarde%20e%20a%20Rocha%20Aquil%C3%B4nia/Hibergarde/</loc>
-         <lastmod>2025-03-06</lastmod>
-    </url>
-    <url>
-         <loc>https://JoshSigil.github.io/mundo/fac%C3%A7%C3%B5es/Fac%C3%A7%C3%B5es%20de%20Drakkenheim/</loc>
-         <lastmod>2025-03-06</lastmod>
-    </url>
-    <url>
-         <loc>https://JoshSigil.github.io/mundo/fac%C3%A7%C3%B5es/faccoes_drakkenheim/</loc>
-         <lastmod>2025-03-06</lastmod>
-    </url>
-    <url>
-         <loc>https://JoshSigil.github.io/sistema/Magia/</loc>
-         <lastmod>2025-03-06</lastmod>
-    </url>
-    <url>
-         <loc>https://JoshSigil.github.io/sistema/Magia/escolas/</loc>
-         <lastmod>2025-03-06</lastmod>
-    </url>
-    <url>
-         <loc>https://JoshSigil.github.io/sistema/Magia/magia_geral/</loc>
          <lastmod>2025-03-06</lastmod>
     </url>
     <url>
@@ -73,14 +57,6 @@
          <lastmod>2025-03-06</lastmod>
     </url>
     <url>
-         <loc>https://JoshSigil.github.io/sistema/Regras%20Gerais/exploracao/</loc>
-         <lastmod>2025-03-06</lastmod>
-    </url>
-    <url>
-         <loc>https://JoshSigil.github.io/sistema/Regras%20Gerais/tipos/</loc>
-         <lastmod>2025-03-06</lastmod>
-    </url>
-    <url>
          <loc>https://JoshSigil.github.io/sistema/acoes/Combate/A%C3%A7%C3%B5es%20do%20Ambiente/</loc>
          <lastmod>2025-03-06</lastmod>
     </url>
@@ -101,27 +77,11 @@
          <lastmod>2025-03-06</lastmod>
     </url>
     <url>
-         <loc>https://JoshSigil.github.io/sistema/combate/</loc>
-         <lastmod>2025-03-06</lastmod>
-    </url>
-    <url>
          <loc>https://JoshSigil.github.io/sistema/combate/Danos/</loc>
          <lastmod>2025-03-06</lastmod>
     </url>
     <url>
          <loc>https://JoshSigil.github.io/sistema/combate/Posicionamento%20T%C3%A1tico/</loc>
-         <lastmod>2025-03-06</lastmod>
-    </url>
-    <url>
-         <loc>https://JoshSigil.github.io/sistema/combate/iniciativa/</loc>
-         <lastmod>2025-03-06</lastmod>
-    </url>
-    <url>
-         <loc>https://JoshSigil.github.io/sistema/combate/movimento/</loc>
-         <lastmod>2025-03-06</lastmod>
-    </url>
-    <url>
-         <loc>https://JoshSigil.github.io/sistema/criacao/introducao/</loc>
          <lastmod>2025-03-06</lastmod>
     </url>
     <url>
@@ -161,19 +121,7 @@
          <lastmod>2025-03-06</lastmod>
     </url>
     <url>
-         <loc>https://JoshSigil.github.io/sistema/rolagens/</loc>
-         <lastmod>2025-03-06</lastmod>
-    </url>
-    <url>
          <loc>https://JoshSigil.github.io/sistema/rolagens/Quedas/</loc>
-         <lastmod>2025-03-06</lastmod>
-    </url>
-    <url>
-         <loc>https://JoshSigil.github.io/sistema/rolagens/ataques/</loc>
-         <lastmod>2025-03-06</lastmod>
-    </url>
-    <url>
-         <loc>https://JoshSigil.github.io/sistema/rolagens/salvamentos/</loc>
          <lastmod>2025-03-06</lastmod>
     </url>
     <url>
@@ -181,15 +129,7 @@
          <lastmod>2025-03-06</lastmod>
     </url>
     <url>
-         <loc>https://JoshSigil.github.io/sistema/talentos/</loc>
-         <lastmod>2025-03-06</lastmod>
-    </url>
-    <url>
-         <loc>https://JoshSigil.github.io/sistema/talentos/gerais/</loc>
-         <lastmod>2025-03-06</lastmod>
-    </url>
-    <url>
-         <loc>https://JoshSigil.github.io/sistema/talentos/magicos/</loc>
+         <loc>https://JoshSigil.github.io/sistema/talentos/Origem/</loc>
          <lastmod>2025-03-06</lastmod>
     </url>
 </urlset>
