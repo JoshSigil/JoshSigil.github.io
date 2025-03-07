@@ -23,7 +23,7 @@ h1, h2, h3, h4, h5, h6 {
 /* Fonte para o corpo do texto */
 body, .md-typeset, .md-content {
     font-family: 'EB Garamond', serif;
-    font-size: 1.2em;
+    font-size: 1.1em;
     line-height: 1.8;
     color: var(--md-default-fg-color);
     background-color: #ffffff;
