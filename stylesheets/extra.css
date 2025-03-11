@@ -23,7 +23,7 @@ h1, h2, h3, h4, h5, h6 {
 /* Fonte para o corpo do texto */
 body, .md-typeset, .md-content {
     font-family: 'EB Garamond', serif;
-    font-size: 1.1em;
+    font-size: 1.2em;
     line-height: 1.8;
     color: var(--md-default-fg-color);
     background-color: #ffffff;
@@ -65,108 +65,4 @@ body, .md-typeset, .md-content {
     body, .md-typeset, .md-content {
         background-color: var(--md-mobile-bg-color) !important; /* Fundo mais claro para celulares */
     }
-}
-/* Estilização geral da tabela */
-.md-typeset table {
-    width: 100%;
-    border-collapse: collapse;
-    border: 2px solid #865792; /* Borda bege/dourado */
-    font-size: 1.1em;
-}
-
-/* Estiliza o cabeçalho */
-.md-typeset table thead {
-    background-color: #423349; /* Cor bege/dourado */
-    color: #ffffff; /* Texto branco */
-    font-weight: bold;
-    text-align: left;
-}
-
-/* Células da tabela */
-.md-typeset table td, .md-typeset table th {
-    border: 1px solid #7d6280; /* Borda fina */
-    padding: 10px;
-}
-
-/* Alternância de cores nas linhas */
-.md-typeset table tbody tr:nth-child(even) {
-    background-color: #F5F5F5; /* Cinza claro */
-}
-
-.md-typeset table tbody tr:nth-child(odd) {
-    background-color: #EAEAEA; /* Outra variação de cinza claro */
-}
-
-/* Destaca células ao passar o mouse */
-.md-typeset table tr:hover {
-    background-color: #DDD8C4; /* Bege claro */
-}
-/* Aumenta a fonte das tabelas */
-.md-typeset table {
-    font-size: 1.2em; /* Ajuste conforme necessário */
-}
-
-/* Aumenta a fonte do cabeçalho da tabela */
-.md-typeset table thead th {
-    font-size: 1.3em; /* Maior que o texto normal */
-    font-weight: bold;
-}
-
-/* Aumenta a fonte das células */
-.md-typeset table td {
-    font-size: 1.15em;
-}
-@media (prefers-color-scheme: dark) {
-    .md-typeset table {
-        font-size: 1.2em;
-    }
-
-    .md-typeset table thead th {
-        font-size: 1.3em;
-        font-weight: bold;
-    }
-
-    .md-typeset table td {
-        font-size: 1.15em;
-    }
-}
-/* Ajuste para o dark mode */
-@media (prefers-color-scheme: dark) {
-    .md-typeset table {
-        border-color: #A39E93; /* Borda mais escura no dark mode */
-    }
-
-    .md-typeset table thead {
-        background-color: #554E3E; /* Cabeçalho escuro */
-        color: #FFFFFF;
-    }
-
-    .md-typeset table tbody tr:nth-child(even) {
-        background-color: #2D2B26;
-    }
-
-    .md-typeset table tbody tr:nth-child(odd) {
-        background-color: #403D37;
-    }
-
-    .md-typeset table tr:hover {
-        background-color: #5B5549;
-    }
-}
-.cover-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    max-height: 80vh; /* Ajusta a altura para ocupar até 80% da tela */
-    overflow: hidden;
-    margin-top: 20px;
-}
-
-.cover-image {
-    width: 100%;
-    max-width: 1200px; /* Limita o tamanho para evitar distorções */
-    height: auto;
-    border-radius: 10px; /* Bordas arredondadas opcionais */
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); /* Sombra para destaque */
 }
